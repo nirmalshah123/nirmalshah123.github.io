@@ -26,7 +26,7 @@ window.PORTFOLIO = {
     name: "Nirmal Shah",
     tagline:
       "Tinkerer",
-    resumeUrl: null,
+    resumeUrl: "https://drive.google.com/file/d/1zylgkGSkb--66dVDin06j9TIFLWhIZQD/view?usp=sharing",
   },
 
   about: {
