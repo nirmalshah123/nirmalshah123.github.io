@@ -45,12 +45,30 @@
     const brandHref = esc(P.nav.brandHref || "index.html");
     nav.innerHTML = `
       <a class="nav-brand" href="${brandHref}">${esc(P.nav.brand)}</a>
+      <button type="button" class="nav-burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
       <div class="nav-links">${links}</div>
       <button type="button" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
         <span class="theme-icon theme-icon-sun" aria-hidden="true"></span>
         <span class="theme-icon theme-icon-moon" aria-hidden="true"></span>
       </button>
     `;
+
+    const burger = nav.querySelector(".nav-burger");
+    const menu = nav.querySelector(".nav-links");
+    burger.addEventListener("click", () => {
+      const open = menu.classList.toggle("nav-open");
+      burger.classList.toggle("burger-open", open);
+      burger.setAttribute("aria-expanded", String(open));
+    });
+    menu.querySelectorAll(".nav-link").forEach((link) => {
+      link.addEventListener("click", () => {
+        menu.classList.remove("nav-open");
+        burger.classList.remove("burger-open");
+        burger.setAttribute("aria-expanded", "false");
+      });
+    });
   }
 
   function renderHero() {
