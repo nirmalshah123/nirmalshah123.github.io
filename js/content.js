@@ -183,6 +183,19 @@ window.PORTFOLIO = {
       "",
     items: [
       {
+        title: "Dynamic Adversarial Dialogue",
+        description:
+          "Developed an end-to-end, voice-based NLP application designed to train customer-service representatives in handling difficult interactions. The browser-based system simulates real-time conversations with an adversarial AI and provides automated, rubric-based performance evaluations.",
+        tech: ["NLP", "Groq", "ElevenLabs", "RAG", "Full Stack"],
+        links: [
+          {
+            label: "Code",
+            href: "https://github.com/nirmalshah123/NLP_Project",
+            external: true,
+          },
+        ],
+      },
+      {
         title: "ThermalGuard: Privacy-Aware Occupancy Monitoring",
         description:
           "Built a non-invasive occupancy monitoring system for old-age homes that detects human presence and assists healthcare workers without compromising patient privacy. Utilizing thermal imaging, multithreading and cryptography, it securely processes and transmits real-time data for fall detection and elderly care.",
