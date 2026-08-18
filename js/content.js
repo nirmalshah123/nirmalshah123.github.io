@@ -52,6 +52,22 @@ window.PORTFOLIO = {
     linkedInUrl: null,
     items: [
       {
+        role: "AI/ML Intern",
+        org: "LinkedIn",
+        orgUrl: "https://www.linkedin.com/",
+        employmentType: "Internship",
+        location: "",
+        dateRange: "May 2026 – Aug 2026",
+        summary:
+          "Ads Marketplace team (Down Funnel Optimization) — cross-architecture distillation for Leadgen Sponsored Updates.",
+        tech: ["ML Modeling", "AI Infrastructure", "ML Profilers", "Flyte", "PyTorch", "Distributed training", "Git"],
+        bullets: [
+          "Worked at the Ads Marketplace team (Down Funnel Optimization), explored cross-architecture distillation from a Small Language teacher model (SLM) to a Generative Recommender (GR) Sequence student model for Leadgen Sponsored Updates.",
+          "Increased ROC-AUC of the inference-friendly GR model by 2.5% through distillation.",
+          "Optimized training time by ~6% by profiling the flow and improving the bottleneck.",
+        ],
+      },
+      {
         role: "Post Silicon Validation",
         org: "NVIDIA",
         orgUrl: "https://www.nvidia.com/en-us/",
@@ -362,6 +378,11 @@ window.PORTFOLIO = {
         name: "Machine Learning",
         items: [
           "PyTorch",
+          "ML Modeling",
+          "Distributed training",
+          "AI Infrastructure",
+          "ML Profilers",
+          "Flyte",
           "Neural networks",
           "Model optimization for edge",
           "ML systems basics",
